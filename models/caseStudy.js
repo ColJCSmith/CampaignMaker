@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
-const campaignSchema = new Schema(
+const caseStudySchema = new Schema(
   {
     CampaignName: {
       type: String,
@@ -29,6 +29,6 @@ const campaignSchema = new Schema(
   }
 );
 
-const Campaign = mongoose.model("campaign", campaignSchema);
+const caseStudy = mongoose.model("caseStudy", caseStudySchema);
 
-module.exports = Campaign;
+module.exports = caseStudy;
