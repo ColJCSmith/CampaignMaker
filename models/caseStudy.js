@@ -4,30 +4,21 @@ const Schema = mongoose.Schema;
 
 const caseStudySchema = new Schema(
   {
-    CampaignName: {
+    Persona: {
       type: String,
       trim: true,
-      required: "Give your campaign a name"
+      required: ""
     },
-    CampaignDesc: {
+    Story: {
       type: String,
       trim: false,
-      required: "Describe the campaign you are launching"
+      required: ""
     },
-    RecDonation: {
+    Image: {
       type: Number,
       required: "Enter an amount"
-    },
-    StartDate: {
-      type: Date,
-      default: Date.now
-    },
-    EndDate: {
-      type: Date,
-      default: Date.now
     }
-  }
-);
+  });
 
 const caseStudy = mongoose.model("caseStudy", caseStudySchema);
 

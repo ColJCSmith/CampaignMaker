@@ -41,7 +41,7 @@ code {
 
   /* First image (Logo. Full height) */
   .bgimg-1 {
-    background-image: url('../src/BoysInBushfire.jpg');
+    background-image: url('../public/images/BoysInBushfire.jpg');
     min-height: 100%;
   }
 

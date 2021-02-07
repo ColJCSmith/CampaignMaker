@@ -75,7 +75,7 @@ box-shadow: 0 0 8px  #cc7a00;
 .banner {
 position: relative;
 height: 300px;
-background-image: url("../src/BoysInBushfire.jpg");  
+background-image: url("../public/images/BoysInBushfire.jpg");  
 background-size: cover;
 display: flex;
 justify-content: center;
