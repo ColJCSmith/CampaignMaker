@@ -8,6 +8,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      {/* <Banner /> */}
       <div class="testbox">
         <form action="/">
           {/* <Banner /> */}
@@ -42,16 +43,7 @@ function App() {
           </div>
           <div class="caseStudy">
             <label>Select a case study</label>
-
-          </div>
-
-          <div class="item">
-            <label for="sunday">Time you are available for Sunday</label>
-            <input id="sunday" type="text" name="language" />
-          </div>
-          <div class="item">
-            <label for="comment">Comments/Explanations/Exceptions</label>
-            <textarea id="comment" rows="3"></textarea>
+            <input id="case" type="dropdown" name="caseStudy" />
           </div>
           <div class="btn-block">
             <button type="submit" href="/">Create Campaign</button>
@@ -60,7 +52,6 @@ function App() {
       </div>
 
       <Footer />
-
     </div>
   );
 }
