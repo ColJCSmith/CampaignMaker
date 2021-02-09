@@ -25,6 +25,10 @@ const campaignSchema = new Schema(
     EndDate: {
       type: Date,
       default: Date.now
+    },
+    CaseStudy: {
+      type: Schema.ObjectId,
+      ref: 'Persona'
     }
   }
 );

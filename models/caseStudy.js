@@ -15,8 +15,8 @@ const caseStudySchema = new Schema(
       required: ""
     },
     Image: {
-      type: Number,
-      required: "Enter an amount"
+      type: Image,
+      required: ""
     }
   });
 
