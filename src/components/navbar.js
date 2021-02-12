@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 function Navbar(props) {
   return (
@@ -8,19 +9,33 @@ function Navbar(props) {
           href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
           <i class="fa fa-bars"></i>
         </a>
-        <a href="#home" class="w3-bar-item w3-button" color="white">HOME</a>
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-bullhorn"></i> ABOUT</a>
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-        <a href="#builder" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-tools"></i> BUILDER</a>
+        <Link to='/about'>
+          <ul class="w3-bar-item w3-button" color="white">HOME</ul>
+        </Link>
+        <Link to='/about'>
+          <ul class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-bullhorn"></i> ABOUT</ul>
+        </Link>
+        <Link to='/contact'>
+          <ul class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</ul>
+        </Link>
+        <Link to='/builder'>
+          <ul class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-wrench"></i> BUILDER</ul>
+        </Link>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
           <i class="fa fa-search"></i>
         </a>
       </div>
 
       <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-        <a href="#builder" class="w3-bar-item w3-button" onclick="toggleFunction()"> BUILDER</a>
+        <Link to='/about'>
+          <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+        </Link>
+        <Link to='/contact'>
+          <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        </Link>
+        <Link to='/builder'>
+          <a href="#builder" class="w3-bar-item w3-button" onclick="toggleFunction()"> BUILDER</a>
+        </Link>
         <a href="#" class="w3-bar-item w3-button">SEARCH</a>
       </div>
     </div>

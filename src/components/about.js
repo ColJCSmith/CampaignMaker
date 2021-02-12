@@ -9,7 +9,6 @@ function About(props) {
             form, any user can build a new campaign for the charity. On the homepage, the user answers a series of questions
             about the cause. From here, they can search for and select relevant case studies, and set up a recommended donation.</p>
             <p class="w3-center"><em>Think GoFundMe for Charities</em></p>
-            <button class="w3-button w3-padding-large w3-light-grey center" position="relative" href="App.js">BUILD MY CAMPAIGN</button>
         </div>
     )
 }

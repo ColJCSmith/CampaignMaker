@@ -1,34 +1,36 @@
+// Build the model (ORM) for the campaigns users will input 
+
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
 const campaignSchema = new Schema(
   {
-    CampaignName: {
+    title: {
       type: String,
-      trim: true,
-      required: "Give your campaign a name"
+      required: true
     },
-    CampaignDesc: {
+    description: {
       type: String,
-      trim: false,
-      required: "Describe the campaign you are launching"
+      required: true
     },
-    RecDonation: {
+    donation: {
       type: Number,
-      required: "Enter an amount"
+      required: true
     },
-    StartDate: {
+    startDate: {
       type: Date,
       default: Date.now
     },
-    EndDate: {
+    endDate: {
       type: Date,
-      default: Date.now
+      default: Date.now,
+      required: true
     },
-    CaseStudy: {
+    caseStudy: {
       type: Schema.ObjectId,
-      ref: 'Persona'
+      ref: 'Persona',
+      required: true
     }
   }
 );

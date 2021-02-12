@@ -1,25 +1,26 @@
+// Build the model (ORM) for the case studies that users will choose from 
+
 const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
 const caseStudySchema = new Schema(
   {
-    Persona: {
+    persona: {
       type: String,
-      trim: true,
-      required: ""
+      required: true
     },
-    Story: {
+    story: {
       type: String,
       trim: false,
-      required: ""
+      required: true
     },
     Image: {
-      type: Image,
-      required: ""
+      type: String,
+      required: true
     }
   });
 
-const caseStudy = mongoose.model("caseStudy", caseStudySchema);
+const CaseStudy = mongoose.model("caseStudy", caseStudySchema);
 
-module.exports = caseStudy;
+module.exports = CaseStudy;

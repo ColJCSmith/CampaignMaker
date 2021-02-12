@@ -52,6 +52,21 @@ code {
   .w3-hover-opacity {
     cursor: pointer;
   }
+  .w3-display-middle {
+    white-space: nowrap
+  }
+
+.w3-image {
+  width: 100%
+}
+
+.w3-round {
+  width: 100%
+}
+
+.w3-row-padding {
+  margin: 0 -16px 8px -16px
+}
 
   .center {
     margin: 0;

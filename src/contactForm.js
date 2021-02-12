@@ -2,33 +2,22 @@ import './index.css';
 // import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
 import Navbar from './components/navbar';
-import About from './components/about';
 import Contact from './components/contact';
-import Form from './components/form';
 import Footer from './components/footer';
 import Banner from './components/banner';
-import Button from "./components/button";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-function App() {
+function contactForm() {
   return (
-    <Router>
-      <div>
-        <Navbar />
-        <Banner />
-        <Switch>
-          <Route path="/" exact component={{About }} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/builder" component={Form} />
-        </Switch>
-        <Footer />
-      </div>
-    </Router>
+    <div>
+      <Navbar />
+      <Banner />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 
-export default App;
+export default contactForm;
 
 
 
