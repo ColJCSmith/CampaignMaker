@@ -19,7 +19,10 @@ function Navbar(props) {
           <ul class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</ul>
         </Link>
         <Link to='/builder'>
-          <ul class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-wrench"></i> BUILDER</ul>
+          <ul class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cogs"></i> BUILDER</ul>
+        </Link>
+        <Link to='/microsite'>
+          <ul class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-wrench"></i> TEST</ul>
         </Link>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
           <i class="fa fa-search"></i>

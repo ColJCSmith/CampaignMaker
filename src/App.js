@@ -1,3 +1,4 @@
+import React from "react";
 import './index.css';
 // import './App.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -8,7 +9,10 @@ import Form from './components/form';
 import Footer from './components/footer';
 import Banner from './components/banner';
 import Button from "./components/button";
+import Microsite from "./components/microSite"
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Fragment } from 'react'
+
 
 function App() {
   return (
@@ -17,10 +21,28 @@ function App() {
         <Navbar />
         <Banner />
         <Switch>
-          <Route path="/" exact component={{About }} />
-          <Route path="/about" component={About} />
+          <Route path="/" exact component={About} />
+          <Route path="/" exact render={() =>
+            <Fragment>
+              <About />
+              <Button />
+            </Fragment>
+          } />
+          <Route path="/about" render={() =>
+            <Fragment>
+              <About />
+              <Button />
+            </Fragment>
+          } />
           <Route path="/contact" component={Contact} />
+          <Route path="/" exact render={() =>
+            <Fragment>
+              <Contact />
+              <Button />
+            </Fragment>
+          } />
           <Route path="/builder" component={Form} />
+          <Route path="/test" component={Microsite} />
         </Switch>
         <Footer />
       </div>
